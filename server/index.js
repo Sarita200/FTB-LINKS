@@ -21,7 +21,7 @@ const connectDB = async ()=>{
 connectDB();
 
 
-app.get('/health' , (res,req) =>{
+app.get('/health' , (req,res) =>{
     res.json({
         success: true,
         message:"Welcome to FTB Links"
