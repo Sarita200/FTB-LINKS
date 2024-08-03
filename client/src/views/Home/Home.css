@@ -1,0 +1,31 @@
+.Title{
+    text-align: center;
+}
+.title-heading{
+    text-align: center;
+}
+.link-form{
+    display: block;
+    margin: 50px auto;
+    width: 500px;
+    padding: 10px;
+    background-color: rgb(198, 178, 217);
+}
+.Link-Input{
+    font-size: 17px;
+    display: block;
+    width: 400px;
+    margin: 20px auto;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 0 1px rgb(97, 93, 93);
+    
+}
+.link-btn{
+    font-size: 15px;
+    border-radius: 50px;
+    padding: 8px 20px;
+    border: none;
+    margin: 10px 190px;
+}
