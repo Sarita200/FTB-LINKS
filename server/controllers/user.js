@@ -13,7 +13,7 @@ const postSignUp= async (req,res) =>{
         const savedUser = await user.save();
         
         res.json({
-            succss :true,
+            success :true,
             data : savedUser,
             message: "SignUp successfull"
         })
@@ -22,8 +22,7 @@ const postSignUp= async (req,res) =>{
         res.json({
             success :false,
             data:null,
-            message: e
-            .message
+            message: e.message
         })
     }
 }
@@ -44,7 +43,7 @@ const postLogin = async(req,res) =>{
     }
     else{
         res.json({
-            success: true,
+            success: false,
             data:null,
             message: "Invalid Credential"
         })

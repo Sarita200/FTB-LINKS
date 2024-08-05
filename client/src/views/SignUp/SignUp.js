@@ -23,9 +23,11 @@ function SignUp() {
             proffession: user.proffession
         })
 
+        console.log(response);
+        
+
         if (response.data.success) {
             toast.success(response.data.message)
-
             setUser({
                 fullName: '',
                 email: '',
@@ -90,5 +92,4 @@ function SignUp() {
         </div>
     )
 }
-
-export default SignUp
+export default SignUp;
