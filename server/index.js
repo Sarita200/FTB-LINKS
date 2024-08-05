@@ -2,7 +2,7 @@ import express from "express"
 import cors from "cors"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
-import { postLink ,getRedirect } from "./controllers/link.js"
+import { postLink ,getRedirect ,getAllLinks} from "./controllers/link.js"
 
 dotenv.config();
 
@@ -29,6 +29,8 @@ app.get('/health' , (req,res) =>{
 })
 
 app.post('/link', postLink)
+
+app.get('/links' , getAllLinks)
 
 app.get('/:slug', getRedirect)
 

@@ -17,6 +17,15 @@ const postLink = async(req,res) =>{
         message : "Link created successfully"
     })
 }
+const getAllLinks = async(req ,res)=>{
+    const links = await Link.find()
+
+    res.json({
+        success: true,
+        data: links,
+        message: "All links Fetch Successfully.."
+    })
+}
 
 const getRedirect = async(req,res) =>{
     const { slug } =req.params;
@@ -38,5 +47,6 @@ const getRedirect = async(req,res) =>{
 
 export {
     postLink,
-    getRedirect
+    getRedirect,
+    getAllLinks
 };
