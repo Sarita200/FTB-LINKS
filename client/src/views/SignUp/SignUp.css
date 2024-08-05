@@ -28,3 +28,14 @@
     background-color: rgb(131, 19, 230);
     color: white;
 }
+.alreadyAcc{
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.login-text{
+    color: blue;
+    font-weight: bold;
+}

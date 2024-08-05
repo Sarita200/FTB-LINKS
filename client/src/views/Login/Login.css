@@ -28,3 +28,7 @@
      background-color: rgb(131, 19, 230);
      color: white;
  }
+ .login-text{
+    color: blue;
+    font-weight: bold;
+}
