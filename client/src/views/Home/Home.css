@@ -3,10 +3,12 @@
 }
 .title-heading{
     text-align: center;
+    margin-top: 30px;
 }
 .link-container{
     display: flex;
     justify-content: space-around;
+    margin-top: 40px;
 }
 .link-form{
     width: 600px;
@@ -22,8 +24,7 @@
     padding: 8px 10px;
     border-radius: 5px;
     border: none;
-    box-shadow: 0 0 10px 1px rgb(97, 93, 93);
-    
+    box-shadow: 0 0 10px 1px rgb(97, 93, 93);  
 }
 .link-btn{
     font-size: 17px;
@@ -40,6 +41,9 @@
     padding: 10px;
     background-color: rgb(198, 178, 217);
     box-shadow: 0 0 5px 3px rgb(163, 132, 192);
+    max-height: 500px;
+    overflow-y: scroll ;
+    overflow-x: hidden;
 }
 .title-container{
     text-align: center;

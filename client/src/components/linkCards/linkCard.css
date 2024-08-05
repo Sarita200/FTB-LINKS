@@ -1,0 +1,31 @@
+.link-cards{
+    display: block;
+    margin: 10px;
+    background-color: #ffff;
+    width: 500px;
+    margin: 20px auto;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px 1px rgb(97, 93, 93);
+    position: relative;
+}
+.link-card-title{
+    margin: 0;
+}
+.link-card-shortUrl{
+    margin: 0;
+}
+.link-card-targetUrl{
+    margin: 0;
+    text-decoration: none;
+}
+.link-card-views{
+    margin: 0;
+}
+.link-card-createdAt{
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    bottom: 8px;
+}

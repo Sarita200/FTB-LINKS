@@ -2,7 +2,8 @@ import express from "express"
 import cors from "cors"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
-import { postLink ,getRedirect ,getAllLinks} from "./controllers/link.js"
+import { postLink ,getRedirect ,getAllLinks } from "./controllers/link.js"
+import {postSignUp} from "./controllers/user.js"
 
 dotenv.config();
 
@@ -33,6 +34,10 @@ app.post('/link', postLink)
 app.get('/links' , getAllLinks)
 
 app.get('/:slug', getRedirect)
+
+app.post('/signUp',postSignUp)
+
+
 
 app.listen(PORT , () =>{
     console.log(`server started on port ${PORT}`)

@@ -48,10 +48,11 @@ function Home() {
     return (
         <div >
             <h1 className='Title'> Shorten Link..🤩</h1>
-            <h2 className='title-heading'></h2>
+            <h2 className='title-heading'>Quick Access, Smart Solutions</h2>
             <div className='link-container'>
                 <div >
                     <form className='link-form'>
+                        <h2 className='title-container'>Short Your Link Here</h2>
                         <input
                             type='text'
                             placeholder='Title'
