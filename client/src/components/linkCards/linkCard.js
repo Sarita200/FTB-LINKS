@@ -1,12 +1,18 @@
 import React from 'react'
-import './'
+import './LinkCard.css'
 
-function linkCard() {
+function LinkCard({ title ,target ,slug , views , createdAt }) {
+
+ 
   return (
     <div>
-      
+      {title}
+      {slug}
+      {target}
+      {views}
+      {createdAt}
     </div>
   )
 }
 
-export default linkCard
+export default LinkCard

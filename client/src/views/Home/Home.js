@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Home.css'
 import axios from "axios"
 import toast from "react-hot-toast"
 import { Toaster } from 'react-hot-toast'
+import LinkCard from '../../components/LinkCards/LinkCard'
 
 function Home() {
     const [linkData, setLink] = useState({
@@ -32,6 +33,18 @@ function Home() {
             console.log(response)
         }
     }
+
+    const [userLinks ,setAllLinks] = useState([])
+
+    const fetchLinks = async () =>{
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/links`)
+        setAllLinks(response.data.data)
+    }
+    useEffect( () =>{
+        fetchLinks();
+    }, [] )
+    
+
     return (
         <div >
             <h1 className='Title'> Shorten Link..🤩</h1>
@@ -90,6 +103,12 @@ function Home() {
 
                 <div className='allLink-container'>
                     <h2 className='title-container'>My Link</h2>
+                    {
+                        userLinks.map((links ,i) =>{
+                            const { title ,target ,slug , views , createdAt } =links
+                            return <LinkCard key={i} title ={title} slug={slug} target={target} views={views} createdAt={createdAt}/>
+                        })
+                    }
                 </div>
             </div>
             <Toaster />
