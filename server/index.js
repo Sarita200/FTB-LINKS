@@ -3,7 +3,7 @@ import cors from "cors"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
 import { postLink ,getRedirect ,getAllLinks } from "./controllers/link.js"
-import {postSignUp ,postLogin} from "./controllers/user.js"
+import {postSignUp ,postLogin } from "./controllers/user.js"
 
 dotenv.config();
 

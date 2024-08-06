@@ -29,12 +29,9 @@ function Login() {
             setTimeout(() =>{
                 window.location.href='/'
             }, 3000)
-
-            
         }
         else{
             toast.error(response.data.message)
-            
         }
     }
     return (

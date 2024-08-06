@@ -8,50 +8,70 @@ import Navbar from '../../components/Navbar/Navbar'
 
 
 function Home() {
-    const [linkData, setLink] = useState({
-        title: "",
-        target: "",
-        slug: ""
-    })
-    const createLink = async (req, res) => {
-        if (!linkData.title || !linkData.slug || !linkData.target) {
+    const [title, setTitle] = useState('')
+    const [ target , setTarget ] =useState('')
+    const [ slug , setSlug ] = useState('')
+
+    const [user, setUser] = useState('')
+    const [userLink, setUserLink] = useState([])
+
+    const createLink = async () => {
+        if (!title || !slug || !target) {
             toast.error("Please enter all details")
             return
         }
-        else {
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/link`, linkData)
-            if (response.data.success) {
-                toast.success("Shorten Link Successfully...")
+        const response  = await axios.post(`${process.env.REACT_APP_API_URL}/link` ,{
+            title ,
+            target,
+            slug,
+            user: user._id
+        } )
 
-                setLink({
-                    title: "",
-                    target: "",
-                    slug: ""
-                })
-            }
-            else {
+        if(response.data.success){
+            toast.success("Link generated successfully....!");
+            setTitle('')
+            setTarget('')
+            setSlug('')
+    }
+        else{
                 toast.error(response.data.message)
             }
-            console.log(response)
+            
         }
-    }
-
-    const [userLinks, setAllLinks] = useState([])
+    
+        useEffect(() => {
+            const currentUser = JSON.parse(localStorage.getItem('currentUser'))
+        
+            if (currentUser) {
+              setUser(currentUser)
+            }
+        
+            if (!currentUser) {
+              window.location.href = '/login'
+            }
+          }, [])
+          console.log(user._id) ;   
 
     const fetchLinks = async () => {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/links`)
-        setAllLinks(response.data.data)
+        if(!user || !user._id){
+            return
+        }
+        toast.loading("Loading all links...");
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/links?userId=${user._id}`);
+        toast.dismiss();
+        toast.success("All link fetched");
+        setUserLink(response.data.data)
+        
     }
     useEffect(() => {
         fetchLinks();
-    }, [])
+    }, [user])
 
 
     return (
 
         <div >
             <Navbar />
-            
             <div className='linkContainer'>
                 <div >
                     <form className='linkForm'>
@@ -59,12 +79,9 @@ function Home() {
                         <input
                             type='text'
                             placeholder='Title'
-                            value={linkData.title}
+                            value={title}
                             onChange={(e) => {
-                                setLink({
-                                    ...linkData,
-                                    title: e.target.value
-                                })
+                               setTitle(e.target.value)
                             }}
                             className='LinkInput'
                         />
@@ -72,12 +89,9 @@ function Home() {
                         <input
                             type='text'
                             placeholder='Target'
-                            value={linkData.target}
+                            value={target}
                             onChange={(e) => {
-                                setLink({
-                                    ...linkData,
-                                    target: e.target.value
-                                })
+                                setTarget(e.target.value)
                             }}
                             className='LinkInput'
                         />
@@ -85,12 +99,9 @@ function Home() {
                         <input
                             type='text'
                             placeholder='slug'
-                            value={linkData.slug}
+                            value={slug}
                             onChange={(e) => {
-                                setLink({
-                                    ...linkData,
-                                    slug: e.target.value
-                                })
+                                setSlug(e.target.value)
                             }}
                             className='LinkInput'
                         />
@@ -108,9 +119,9 @@ function Home() {
                 <div className='allLinkContainer'>
                     <h2 className='titleContainer'>My Link</h2>
                     {
-                        userLinks.map((links, i) => {
-                            const { title, target, slug, views, createdAt } = links
-                            return <LinkCard key={i} title={title} slug={slug} target={target} views={views} createdAt={createdAt} />
+                        userLink.map((links,i) => {
+                            const { title, target, slug, views, createdAt} = links;
+                            return <LinkCard key={i}  title={title} slug={slug} target={target} views={views} createdAt={createdAt} />
                         })
                     }
                 </div>
