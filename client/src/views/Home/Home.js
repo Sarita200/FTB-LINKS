@@ -52,7 +52,6 @@ function Home() {
         <div >
             <Navbar />
             
-
             <div className='linkContainer'>
                 <div >
                     <form className='linkForm'>

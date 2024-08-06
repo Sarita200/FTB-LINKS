@@ -12,8 +12,10 @@ function Navbar() {
                 <p className="navbar-brand" href="#">
                     <span><img src={logoImg} className='LogoImg' /></span>
                     <span className='Title'> Shorten Link..🤩</span>
-
+                    
                 </p>
+                <h4 className='subheading'>Link Smarter</h4>
+                
 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

@@ -11,3 +11,8 @@
 .Title{
     align-items: center;
 }
+.subheading{
+    text-align: center;
+    margin: auto 500px;
+    color: rgb(127, 8, 239);
+}
