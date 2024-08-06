@@ -2,7 +2,7 @@
     display: block;
     margin: 10px;
     background-color: #ffff;
-    width: 500px;
+    width: 600px;
     margin: 20px auto;
     padding: 8px 10px;
     border-radius: 5px;
@@ -11,29 +11,52 @@
     position: relative;
 }
 .link-card-title{
-    margin: 0;
     font-size: 20px;
 }
 .link-card-shortUrl{
-    margin: 0;
+    
     text-decoration: none;
 }
 .link-card-targetUrl{
-    margin: 0;
+   
     text-decoration: none;
 }
-.link-card-view{
-    margin: 0;
+.link-card-view-text{
+    margin-right: 10px;
 }
 .link-card-createdAt{
-    margin: 0;
+    
     position: absolute;
     right: 15px;
     bottom: 8px;
 }
 .copyImg{
+
     width: 20px;
     position: absolute;
     right: 5px;
     top: 5px;
+}
+.link-card-slug{
+    text-decoration: none;
+    color: rgb(239, 93, 93);
+    margin: 0;
+}
+.link-card-target{
+    
+    text-decoration: none;
+}
+.link-card-view{
+    color: rgb(145, 135, 135);
+}
+.shortImg{
+    height: 20px;
+    margin-right: 10px;
+}
+.targetImg{
+    height: 20px;
+    margin-right: 10px;
+}
+.eye-view{
+    height: 22px;
 }
