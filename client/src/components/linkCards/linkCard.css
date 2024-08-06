@@ -12,15 +12,17 @@
 }
 .link-card-title{
     margin: 0;
+    font-size: 20px;
 }
 .link-card-shortUrl{
     margin: 0;
+    text-decoration: none;
 }
 .link-card-targetUrl{
     margin: 0;
     text-decoration: none;
 }
-.link-card-views{
+.link-card-view{
     margin: 0;
 }
 .link-card-createdAt{
@@ -28,4 +30,10 @@
     position: absolute;
     right: 15px;
     bottom: 8px;
+}
+.copyImg{
+    width: 20px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
 }

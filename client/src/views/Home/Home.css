@@ -1,22 +1,22 @@
 .Title{
     text-align: center;
 }
-.title-heading{
+.titleHeading{
     text-align: center;
     margin-top: 30px;
 }
-.link-container{
+.linkContainer{
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
 }
-.link-form{
+.linkForm{
     width: 600px;
     padding: 10px;
     background-color: rgb(198, 178, 217);
     box-shadow: 0 0 5px 3px rgb(163, 132, 192);
 }
-.Link-Input{
+.LinkInput{
     font-size: 17px;
     display: block;
     width: 400px;
@@ -26,7 +26,7 @@
     border: none;
     box-shadow: 0 0 10px 1px rgb(97, 93, 93);  
 }
-.link-btn{
+.linkBtn{
     font-size: 17px;
     border-radius: 50px;
     padding: 8px 20px;
@@ -36,7 +36,7 @@
     background-color: rgb(131, 19, 230);
     color: white;
 }
-.allLink-container{
+.allLinkContainer{
     width: 600px;
     padding: 10px;
     background-color: rgb(198, 178, 217);
@@ -45,7 +45,7 @@
     overflow-y: scroll ;
     overflow-x: hidden;
 }
-.title-container{
+.titleContainer{
     text-align: center;
     margin-top: 1px;
 }

@@ -4,6 +4,8 @@ import axios from "axios"
 import toast from "react-hot-toast"
 import { Toaster } from 'react-hot-toast'
 import LinkCard from '../../components/LinkCards/LinkCard'
+import Navbar from '../../components/Navbar/Navbar'
+
 
 function Home() {
     const [linkData, setLink] = useState({
@@ -34,25 +36,27 @@ function Home() {
         }
     }
 
-    const [userLinks ,setAllLinks] = useState([])
+    const [userLinks, setAllLinks] = useState([])
 
-    const fetchLinks = async () =>{
+    const fetchLinks = async () => {
         const response = await axios.get(`${process.env.REACT_APP_API_URL}/links`)
         setAllLinks(response.data.data)
     }
-    useEffect( () =>{
+    useEffect(() => {
         fetchLinks();
-    }, [] )
-    
+    }, [])
+
 
     return (
+
         <div >
-            <h1 className='Title'> Shorten Link..🤩</h1>
-            <h2 className='title-heading'>Quick Access, Smart Solutions</h2>
-            <div className='link-container'>
+            <Navbar />
+            
+
+            <div className='linkContainer'>
                 <div >
-                    <form className='link-form'>
-                        <h2 className='title-container'>Short Your Link Here</h2>
+                    <form className='linkForm'>
+                        <h2 className='titleContainer'>Short Your Link Here</h2>
                         <input
                             type='text'
                             placeholder='Title'
@@ -63,7 +67,7 @@ function Home() {
                                     title: e.target.value
                                 })
                             }}
-                            className='Link-Input'
+                            className='LinkInput'
                         />
 
                         <input
@@ -76,7 +80,7 @@ function Home() {
                                     target: e.target.value
                                 })
                             }}
-                            className='Link-Input'
+                            className='LinkInput'
                         />
 
                         <input
@@ -89,25 +93,25 @@ function Home() {
                                     slug: e.target.value
                                 })
                             }}
-                            className='Link-Input'
+                            className='LinkInput'
                         />
 
                         <button
                             type='button'
                             onClick={createLink}
-                            className='link-btn'
+                            className='linkBtn'
                         >Shorten</button>
 
 
                     </form>
                 </div>
 
-                <div className='allLink-container'>
-                    <h2 className='title-container'>My Link</h2>
+                <div className='allLinkContainer'>
+                    <h2 className='titleContainer'>My Link</h2>
                     {
-                        userLinks.map((links ,i) =>{
-                            const { title ,target ,slug , views , createdAt } =links
-                            return <LinkCard key={i} title ={title} slug={slug} target={target} views={views} createdAt={createdAt}/>
+                        userLinks.map((links, i) => {
+                            const { title, target, slug, views, createdAt } = links
+                            return <LinkCard key={i} title={title} slug={slug} target={target} views={views} createdAt={createdAt} />
                         })
                     }
                 </div>

@@ -3,6 +3,7 @@ import './Login.css'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import toast, { Toaster } from 'react-hot-toast'
+import Navbar from '../../components/Navbar/Navbar.js'
 
 function Login() {
 
