@@ -10,16 +10,16 @@ Quick Link is a web-based application designed to streamline access to frequentl
 #### 4.Customizable UI: 
     Personalize the appearance with different themes and layouts.
 ### Demo
-You can see Quick Link in action at https://ftb-links-usw5.vercel.app/ 
+    You can see Quick Link in action at https://ftb-links-usw5.vercel.app/ 
 ### Usage
 Once the application is running, you can:
 #### 1.Add a New Link:
-   a.Enter the URL and a descriptive name.
-   b.Click on the "Shorten Button" button.
-   c.see your links
+    a.Enter the URL and a descriptive name.
+    b.Click on the "Shorten Button" button.
+    c.see your links
 #### 2.Search for Links:
-   Type keywords into the search bar to find specific links quickly.
+    Type keywords into the search bar to find specific links quickly.
 ### Contact
 For any questions or issues, please contact us via:
 #### Email: 
-📧saritasadgir1@gmail.com
+    📧 saritasadgir1@gmail.com
