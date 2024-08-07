@@ -25,5 +25,5 @@ For any questions or issues, please contact us via:
     📧 saritasadgir1@gmail.com
 ### Contributor
 <a href="https://github.com/Sarita200/FTB-LINKS/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=Sarita200/FTB-LINKS" />
+    <img src="https://contrib.rocks/image?repo=Sarita200/FTB-LINKS" />
 </a>
