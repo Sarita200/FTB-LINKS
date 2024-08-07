@@ -6,14 +6,11 @@ import toast, { Toaster } from 'react-hot-toast'
 import Navbar from '../../components/Navbar/Navbar.js'
 import Footer from '../../components/Footer/Footer.js'
 
+
 function Login() {
 
     const [email , setEmail ] = useState('')
     const [password , setPassword ] = useState('')
-    const [user , setUser ] = useState({
-        email: email,
-        password : password
-    })
 
     const loginNow = async () => {
         const response = await axios.post(`${process.env.REACT_APP_API_URL}/login` , {
