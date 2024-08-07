@@ -60,3 +60,8 @@
 .eye-view{
     height: 22px;
 }
+@media screen and (max-width : 500px){
+    .link-cards{
+        width: 400px;
+    }
+}
