@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import toast, { Toaster } from 'react-hot-toast'
 import Navbar from '../../components/Navbar/Navbar.js'
+import Footer from '../../components/Footer/Footer.js'
 
 function Login() {
 
@@ -35,6 +36,7 @@ function Login() {
         }
     }
     return (
+        <>
         <div>
             <form className='formContainer'>
                 <h1 className='form-title'> Login</h1>
@@ -63,7 +65,12 @@ function Login() {
                 <Link to='/signUp' className=" alreadyAcc">Already Have an account ? <span className='login-text' > SignUp</span></Link>
             </form>
             <Toaster/>
-        </div>
+           
+        </div><br/><br/><br/>
+
+        <Footer/>
+        </>
+         
     )
 }
 

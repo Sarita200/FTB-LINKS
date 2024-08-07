@@ -1,0 +1,21 @@
+.titleheader{
+    font-weight: bold;
+}
+
+.divPosition{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: #ffff;
+    justify-content: space-around;
+}
+.text-decoration{
+    text-decoration: none;
+    color: blueviolet;
+    text-align: center;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

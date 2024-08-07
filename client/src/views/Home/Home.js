@@ -5,6 +5,7 @@ import toast from "react-hot-toast"
 import { Toaster } from 'react-hot-toast'
 import LinkCard from '../../components/LinkCards/LinkCard'
 import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
 
 
 function Home() {
@@ -70,6 +71,7 @@ function Home() {
 
     return (
 
+        <>
         <div >
             <Navbar />
             <div className='linkContainer'>
@@ -127,7 +129,10 @@ function Home() {
                 </div>
             </div>
             <Toaster />
-        </div>
+        </div><br/><br/><br/>
+
+        <Footer/>
+        </>
     )
 }
 
