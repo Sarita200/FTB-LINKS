@@ -77,7 +77,8 @@ function Home() {
             <div className='linkContainer'>
                 <div >
                     <form className='linkForm'>
-                        <h2 className='titleContainer'>Short Your Link Here</h2>
+                        <h6 className='greeting'>Hello {user.fullName}👋</h6>
+                        <h4 className='titleContainer'>Short Your Link Here</h4>
                         <input
                             type='text'
                             placeholder='Title'

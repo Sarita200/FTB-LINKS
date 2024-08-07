@@ -1,3 +1,6 @@
+.greeting{
+    text-align: center;
+}
 .Title{
     text-align: center;
 }
@@ -18,12 +21,13 @@
     padding: 10px;
     background-color: rgb(198, 178, 217);
     box-shadow: 0 0 5px 3px rgb(163, 132, 192);
+    margin-top: 45px;
 }
 .LinkInput{
     font-size: 17px;
     display: block;
     width: 400px;
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 10px 12px;
     border-radius: 5px;
     border: none;
