@@ -75,7 +75,7 @@ function Home() {
             <Navbar />
             <div className='linkContainer'>
                 <div >
-                    <form className='linkForm'>
+                    <form className='linkForm formLink' >
                         <h6 className='greeting'>Hello {user.fullName}👋</h6>
                         <h4 className='titleContainer'>Short Your Link Here</h4>
                         <input
