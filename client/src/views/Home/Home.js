@@ -7,7 +7,6 @@ import LinkCard from '../../components/LinkCards/LinkCard'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 
-
 function Home() {
     const [title, setTitle] = useState('')
     const [ target , setTarget ] =useState('')
@@ -72,7 +71,7 @@ function Home() {
     return (
 
         <>
-        <div >
+        <div className='bodyContainer'>
             <Navbar />
             <div className='linkContainer'>
                 <div >
@@ -124,7 +123,7 @@ function Home() {
                     {
                         userLink.map((links,i) => {
                             const { title, target, slug, views, createdAt} = links;
-                            return <LinkCard key={i}  title={title} slug={slug} target={target} views={views} createdAt={createdAt} />
+                            return <LinkCard key={i}  title={title} slug={slug} target={target} views={views} createdAt={createdAt} fetchLinks={fetchLinks}/>
                         })
                     }
                 </div>

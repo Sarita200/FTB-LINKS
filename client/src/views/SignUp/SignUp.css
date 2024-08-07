@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.bodyContainer{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
 .form-title{
    text-align: center;
    margin-top: none;

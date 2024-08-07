@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './LinkCard.css'
 import CopyImg from './../LinkCards/link.png'
 import targetImg from './../LinkCards/link2.png'
 import slugImg from './../LinkCards/link3.png'
 import viewImg from './../LinkCards/eye.png'
 
-function LinkCard({ title, target, slug, views, createdAt }) {
+function LinkCard({ title, target, slug, views, createdAt, fetchLinks }) {
   const shortUrl = `${process.env.REACT_APP_API_URL}/${slug}`
+  useEffect(()=>{
+    fetchLinks();
+  },[])
 
   return (
     <div className='link-cards'>

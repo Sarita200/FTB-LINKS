@@ -6,7 +6,7 @@ import linkImg from './../Footer/link3.png'
 
 function Footer() {
     return (
-        <div className="card text-center ">
+        <div className="card text-center bodyContainer">
             <div class="card-header">
                 <span className='titleheader'><img src={linkImg} height={'30px'}/>Shorten Link</span>
             </div>

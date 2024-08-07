@@ -1,18 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import axios from 'axios'
 import toast from 'react-hot-toast'
 import logoImg from './../Footer/link3.png'
 
 function Navbar() {
+/* const [user , setUser ] = useState('')
+
+    const logout = async () =>{
+        localStorage.clear()
+        toast.success("Logout Successfull")
+        setTimeout(() =>{
+            window.location.href = '/login'
+        },3000)
+    }
+
+    useEffect(() =>{
+        const currentUser = JSON.parse(localStorage.getItem('currenUser'))
+        setUser(currentUser)
+    
+    },[])
+    console.log(user);
+    
+*/
+const [user ,setUser] = useState('')
+
+const logout = async () =>{
+    localStorage.clear()
+    toast.success("Logout Successful")
+    setTimeout(() =>{
+        window.location.href = '/login'
+    }, 3000)
+}
+
+useEffect( ()=>{
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'))
+    setUser(currentUser)
+}, [])
+console.log(user)
+
+
     return (
-        <div>
+        <div className='bodyContainer'>
             <nav className="navbar navbar-expand-lg shadow p-3 mb-5 bg-white rounded">
                 <p className="navbar-brand space-aroound setMargin" href="#" >
                     <span><img src={logoImg} className='LogoImg' /></span>
-                    <span className='Title '> Shorten Link</span>
-                    
+                    <span className='Title '> Shorten Link</span>   
                 </p> 
                 
 
@@ -31,21 +64,25 @@ function Navbar() {
                             <a className="nav-link " href="/contact">Contact</a>
                         </li>
                         
-                        <li className='setMargin fontSize'>
+                        {
+                            user ? 
+                            <li className='nav-item setMargin fontSize'>
                             <span
-                                className='nav-item nav-link logOutButton'
-                                onClick={() => {
-                                    localStorage.clear()
-                                    toast.success("Logout Successfull")
-
-                                    setTimeout(() => {
-                                        window.location.href = '/login'
-                                    })
-                                }}
-                            >
-                                Logout
+                                className=' nav-link logOutButton'
+                                onClick={logout} >
+                                    Logout
                             </span>
                         </li>
+                        :
+                        <li className='setMargin fontSize'>
+                            <a
+                                className='nav-item nav-link logOutButton'
+                                href='/login' >
+                                Login
+                            </a>
+                            
+                        </li>
+                        }
                     </ul>
                 </div>
             </nav>

@@ -41,7 +41,7 @@ function SignUp() {
         console.log(response)
     }
     return (
-        <div>
+        <div className='bodyContainer'>
             <form className='formContainer'>
                 <h1 className='form-title'> SignUp</h1>
 

@@ -37,7 +37,8 @@ function Login() {
     }
     return (
         <>
-        <div>
+        <Navbar/>
+        <div className='bodyContainer'>
             <form className='formContainer'>
                 <h1 className='form-title'> Login</h1>
 
