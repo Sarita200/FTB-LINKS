@@ -15,8 +15,8 @@ function Footer() {
                 <h5 className="card-title">Link Smarter, Not Longer</h5>
                 <p className="card-text">Short Links, Fast Clicks</p>
                 <a href="/" className="text-decoration">Home</a><br />
-                <a href="" className="text-decoration">Logout</a><br />
-                <a href="" className="text-decoration">contacts</a>
+                <a href="/login" className="text-decoration">Logout</a><br />
+                <a href="/contact" className="text-decoration">contacts</a>
                 
 
                 <div className='card-footer contacts'>

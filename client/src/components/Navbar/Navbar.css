@@ -11,7 +11,7 @@
 .Title{
     align-items: center;
     font-weight: bold;
-    height: 32;
+    font-size: 25px;
     color: rgb(85, 84, 92);
 }
 .subheading{
@@ -19,4 +19,11 @@
     margin: auto 500px;
     color: rgb(85, 84, 92);
     font-weight: bold;
+}
+.setMargin{
+    margin: auto 80px;
+    margin-left: 100px;
+}
+.fontSize{
+    font-size: 20px;
 }
