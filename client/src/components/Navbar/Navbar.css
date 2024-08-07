@@ -34,3 +34,9 @@
 .fontSize{
     font-size: 20px;
 }
+@media screen and ( max-width : 600px ) {
+    .Title{
+        font-size: 15px;
+        margin-left: 8px;
+    }
+}
