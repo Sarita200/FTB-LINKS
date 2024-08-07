@@ -22,4 +22,4 @@ Once the application is running, you can:
 ### Contact
 For any questions or issues, please contact us via:
 #### Email: 
-saritasadgir1@gmail.com
+📧saritasadgir1@gmail.com
