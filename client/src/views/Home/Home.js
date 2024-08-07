@@ -3,8 +3,8 @@ import './Home.css'
 import axios from "axios"
 import toast from "react-hot-toast"
 import { Toaster } from 'react-hot-toast'
-import LinkCard from './../../components/LinkCards/LinkCard.js'
-import Navbar from '../../components/Navbar/Navbar.js'
+import LinkCard from '../../components/LinkCard/LinkCard.js'
+import Navbar from './../../components/Navbar/Navbar.js'
 import Footer from '../../components/Footer/Footer.js'
 
 function Home() {

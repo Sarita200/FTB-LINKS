@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import './LinkCard.css'
-import CopyImg from './../LinkCards/link.png'
-import targetImg from './../LinkCards/link2.png'
-import slugImg from './../LinkCards/link3.png'
-import viewImg from './../LinkCards/eye.png'
+import CopyImg from './link.png'
+import targetImg from './link2.png'
+import slugImg from './link3.png'
+import viewImg from './eye.png'
 
 function LinkCard({ title, target, slug, views, createdAt, fetchLinks }) {
   const shortUrl = `${process.env.REACT_APP_API_URL}/${slug}`
