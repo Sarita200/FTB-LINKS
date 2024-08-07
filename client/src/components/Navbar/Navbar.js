@@ -3,7 +3,7 @@ import './Navbar.css'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios'
 import toast from 'react-hot-toast'
-import logoImg from './../Navbar/timing.png'
+import logoImg from './../Footer/link3.png'
 
 function Navbar() {
     return (
@@ -11,7 +11,7 @@ function Navbar() {
             <nav className="navbar navbar-expand-lg shadow p-3 mb-5 bg-white rounded">
                 <p className="navbar-brand" href="#">
                     <span><img src={logoImg} className='LogoImg' /></span>
-                    <span className='Title'> Shorten Link..🤩</span>
+                    <span className='Title'> Shorten Link</span>
                     
                 </p>
                 <h4 className='subheading'>Link Smarter</h4>

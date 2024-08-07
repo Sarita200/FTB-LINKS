@@ -5,14 +5,18 @@
     cursor: pointer;
 }
 .LogoImg{
-    height: 50px;
+    height: 30px;
 
 }
 .Title{
     align-items: center;
+    font-weight: bold;
+    height: 32;
+    color: rgb(85, 84, 92);
 }
 .subheading{
     text-align: center;
     margin: auto 500px;
-    color: rgb(127, 8, 239);
+    color: rgb(85, 84, 92);
+    font-weight: bold;
 }

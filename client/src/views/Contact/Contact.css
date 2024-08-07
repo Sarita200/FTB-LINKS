@@ -1,5 +1,21 @@
-
-
 .contact-map{
     width: 100%;
+}
+.contactsDiv{
+    display: flex;
+    flex-direction: row;
+    margin: auto 30px;
+    justify-content: space-around;
+}
+.reachUs{
+    margin-top: 160px;
+    box-shadow: 0 0 5px 1px rgb(98, 90, 90);
+    height: 250px;
+    padding: 30px;
+    text-align: center;
+    justify-items: center;
+}
+.text-secoration{
+    text-decoration: none;
+    color: rgb(43, 39, 39);
 }
