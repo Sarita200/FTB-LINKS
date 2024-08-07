@@ -4,7 +4,7 @@ Quick Link is a web-based application designed to streamline access to frequentl
  #### 1.Create Shortcuts: 
     Add and manage shortcuts to your most-used links.
  #### 2.Organize Links: 
-   Categorize links with tags for easy retrieval.
+    Categorize links with tags for easy retrieval.
 #### 3.Search Functionality: 
     Quickly find links using the built-in search feature.
 #### 4.Customizable UI: 
