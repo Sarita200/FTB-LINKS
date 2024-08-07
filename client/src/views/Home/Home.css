@@ -6,9 +6,6 @@
     font-weight: weight;
     font-style: normal;
 }
-
-
-
 .greeting{
     text-align: center;
 }
@@ -67,4 +64,16 @@
 .titleContainer{
     text-align: center;
     margin-top: 1px;
+}
+@media screen and (max-width : 600px) {
+    .linkContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .linkForm{
+        width: 450px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
 }
