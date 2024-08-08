@@ -56,12 +56,16 @@
 .allLinkContainer{
     width: 700px;
     padding: 10px;
-    background-color: rgb(198, 178, 217);
-    box-shadow: 0 0 5px 3px rgb(163, 132, 192);
+    background-color: rgb(182, 161, 201);
+    box-shadow: 0 0 5px 3px rgb(182, 161, 201);
     max-height: 420px;
     overflow-y: scroll ;
     overflow-x: hidden;
+    
 }
+.allLinkContainer::-webkit-scrollbar {
+    display: none;
+  }
 .titleContainer{
     text-align: center;
     margin-top: 1px;
