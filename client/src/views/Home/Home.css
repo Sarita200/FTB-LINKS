@@ -56,8 +56,6 @@
 .allLinkContainer{
     width: 700px;
     padding: 10px;
-    background-color: rgb(182, 161, 201);
-    box-shadow: 0 0 5px 3px rgb(182, 161, 201);
     max-height: 420px;
     overflow-y: scroll ;
     overflow-x: hidden;

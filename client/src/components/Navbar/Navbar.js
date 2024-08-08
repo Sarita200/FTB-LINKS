@@ -47,7 +47,7 @@ console.log(user)
 
     return (
         <div className='bodyContainer'>
-            <nav className="navbar navbar-expand-lg shadow p-3 mb-5 bg-white rounded">
+            <nav className="navbar navbar-expand-lg shadow p-3 mb-5  rounded NavContainer">
                 <p className="navbar-brand space-aroound setMargin" href="#" >
                     <span><img src={logoImg} className='LogoImg' /></span>
                     <span className='Title '> Shorten Link</span>   

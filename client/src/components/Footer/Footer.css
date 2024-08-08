@@ -8,7 +8,9 @@
 .titleheader{
     font-weight: bold;
 }
-
+.footerContainer{
+    background-color:rgb(189, 173, 203) ;
+}
 .divPosition{
     display: flex;
     flex-direction: row;

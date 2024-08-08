@@ -6,6 +6,9 @@
     font-weight: weight;
     font-style: normal;
 }
+.NavContainer{
+    background-color: rgb(189, 173, 203);
+}
 .nav-sec{
     margin-left: auto;
 }
